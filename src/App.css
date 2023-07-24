@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+.main__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Estilos del header */
+
+header {
+  max-width: 1450px;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+  font-family: "JetBrains Mono", monospace;
+  margin-bottom: 5rem;
+}
+
+/* .header__btn_container {
+  background-color: #555a88;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .5rem;
+  height: 3rem;
+  width: 19rem;
+  font-family: 'JetBrains Mono', monospace;
+  cursor: pointer;
+} */
+
+/* .header__btn_container.button:active{
+    background-color: red;
+} */
+
+.header__btn {
+  border: none;
+  background-color: #555a88;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  gap: 1rem;
+  width: 21rem;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.header__btn:active {
+  opacity: 50%;
+}
+
+/* Estilos del las cardas y del del contenedor principal 
+de las mismas  */
+
+.section__container__cards {
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.card {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 2px rgb(206, 201, 201) solid;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.20);
+}
+.card > h2 {
+  gap: 1rem;
+  margin: rem;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.card > ul,
+li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.card > ul {
+  display: flex;
+  gap: 0.6rem;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.card__ul__li__date {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.card__ul__li__res {
+  opacity: 60%;
+}
+
+.card > ul > li {
+  margin-left: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card > footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card > footer > button {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.footer__btn_trash {
+  background-color: #d93f3f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.footer__btn_update {
+  border: none;
+  background-color: #bdbdbd;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Estilos del formulario donde se ingresan los datos  */
+
+.modal_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.formuser{
+    font-family: "JetBrains Mono", monospace;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    border: 2px rgb(206, 201, 201) solid;
+    padding: 2rem;
+    border-radius: .5rem;
+    width: 350px;
+    box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.20);
+}
+
+
+
+.formuser__container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formuser__label{
+    font-weight: 600;
+}
+
+.formuser__input{
+    padding: .4rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: rgb(242, 239, 239);
+    outline: none;
+}
+.formuser__btn{
+    margin: 0 auto;
+    border: none;
+    background-color: #555a88;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+
+}
+
+  
+  .formuser__btn:active {
+    opacity: 50%;
+  }
+
+
+  /* Media queris */
+
+  @media only screen and (max-width: 400px) {
+     
+   header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    gap: 1.5rem;
+    transition: .3s;
+   }
+
+  }

@@ -118,6 +118,7 @@ li {
   margin-left: 1rem;
   display: flex;
   gap: 0.5rem;
+  word-wrap: break-word;
 }
 
 .card > footer {
@@ -188,6 +189,7 @@ li {
     border: none;
     background-color: rgb(242, 239, 239);
     outline: none;
+
 }
 .formuser__btn{
     margin: 0 auto;
